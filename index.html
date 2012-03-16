@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Form Usability</title>
+    <link href="css/general.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h2> Welcome to TracyKarnabi.com</h2>
+<h3> Sign in/up</h3>
+
+<div class="wholebody">
+	<form>
+        <div>
+            <label for="username"> Username</label>
+            <input id="username"> <span class="status"> </span>
+        </div>
+        
+        	<label for="password"> Password </label>
+            <input type="password" id="password">
+            
+            <ul class="pass-reqs">
+                <li class="req-length"> At least 6 characters long </li>
+                <li class="req-low"> One lower case letter </li>
+                <li class="req-up"> One upper case letter </li>
+                <li class="req-num"> One number </li>
+                <li class="req-spec"> one special character </li>
+            </ul>
+			
+		<div>
+			<label for="email"> Email </label>
+			<input type="email" id="email"><span class="emailstatus"> </span>
+		</div>	
+		
+		<div>
+			<p><span>  Country: </span>
+			<input type="radio" name="countries" id="CAradio">
+			<label for="CAradio"> Canada </label>
+			
+			<input type="radio" name="countries" id="USradio">
+			<label for="USradio"> United States </label>
+			</p>
+		</div>	
+		
+		<div>
+			<label for="city"> City </label>
+			<input type="text" id="city"><span class="citystatus"> </span>
+		</div>
+		
+		<div class="state">
+			<p><span> State: </span>
+			<select name="state-list">Select Province
+				<option value="alabama">Alabama</option>
+				<option value="california">California</option>
+				<option value="florida">Florida</option>
+				<option value="hawaii">Hawaii</option>
+				<option value="indiana">Indiana</option>
+				<option value="newyork">New York</option>
+				<option value="ohio">Ohio</option>
+				<option value="texas">Texas</option>
+				<option value="utah">Utah</option>
+				<option value="virginia">Virginia</option>
+				<option value="washington">Washington</option>
+				<option value="wisconsin">Wisconsin</option>
+				<option value="wyoming">Wyoming</option>
+			</select>
+		</div>
+		
+		<div class="province">
+			<p><span> Province: </span>
+			<select name="province-list">
+				<option value="alberta">Alberta</option>
+				<option value="britishcolumbia">British Columbia</option>
+				<option value="manitoba">Manitoba</option>
+				<option value="newbrunswick">New Brunswick</option>
+				<option value="newfoundland">Newfoundland</option>
+				<option value="novascotia">Nova Scotia</option>
+				<option value="ontario">Ontario</option>
+				<option value="princeedwardisland">Prince Edward Island</option>
+				<option value="quebec">Quebec</option>
+				<option value="saskatchewan">Saskatchewan</option>
+				<option value="northwestterritories">Northwest Territories</option>
+				<option value="nunavut">Nunavut</option>
+				<option value="yukon">Yukon</option>
+			</select>
+		</div>
+		
+		<div class="postalcode">
+			<label for="postal"> Postal Code </label>
+			<input type="text" id="postal">
+		</div>
+		
+		<div class="zipcode">
+			<label for="zip"> Zip Code </label>
+			<input type="text" id="zip">
+		</div>
+    
+    <button type="submit"> Submit</button>
+    
+    </form>
+</div>	
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="js/forms.js"></script>
+
+
+
+
+</body>
+</html>

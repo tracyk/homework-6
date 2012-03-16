@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color:#FCF;
+}
+
+/*------------------------------------------------Header------------------------------------------- */
+
+h2 {
+	text-align:center;
+}
+
+h3{
+	text-align:center;
+}
+
+.wholebody {
+	text-align:center;
+	position: absolute;
+	margin-left:500px;
+	background-color:#C9F;
+	width:600px;
+}
+
+.status {
+	font-weigth:bold;
+	font-size: 1.125em;
+}
+
+.available {
+	color:#0F0;
+}
+
+.unavailable {
+	color:#f33;
+}
+
+.pass-reqs {
+	list-style-type: none;
+	
+}
+
+.pass-reqs li:before {
+	content: "✖";
+	font-weight: bold;
+	color:#f33;
+	font-size: 1.25em;
+}
+
+.pass-reqs li.met:before {
+	content:"✔";
+	color:#0f0;
+}
+
+span {
+	margin-right:20px;
+}
+
+/* ----------------------------------------- List ------------------------------------ */
+
+.province-list {
+	display:none;
+	list-style-type:none;
+}
+
+.state-list {
+	display:none;
+	list-style-type:none;
+}
